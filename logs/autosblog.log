@@ -1,0 +1,18 @@
+Tue 16 Jan 2018 19:14:11 INFO guoshui.py 228 3556 2736 customerid:9,开始尝试登陆
+Tue 16 Jan 2018 19:14:11 INFO guoshui.py 236 3556 2736 未传代理参数，启用本机IP
+Tue 16 Jan 2018 19:14:12 INFO guoshui.py 262 3556 2736 customerid:9，获取验证码为：[{"x":215,"y":61},{"x":68,"y":32},{"x":266,"y":106}]
+Tue 16 Jan 2018 19:14:13 INFO guoshui.py 266 3556 2736 customerid:9，验证验证码[{"x":215,"y":61},{"x":68,"y":32},{"x":266,"y":106}]
+Tue 16 Jan 2018 19:14:13 INFO guoshui.py 274 3556 2736 customerid:9,成功post数据
+Tue 16 Jan 2018 19:14:13 INFO guoshui.py 281 3556 2736 customerid:9pass
+Tue 16 Jan 2018 19:17:25 INFO guoshui.py 365 3556 2736 customerid:9截取国税增值税申报信息
+Tue 16 Jan 2018 19:17:31 INFO shenbao.py 825 3556 2736 customerid:9GSYCX出错
+Tue 16 Jan 2018 19:17:43 WARNING shenbao.py 826 3556 2736 'autoSb' object has no attribute 'wholeyear'
+Tue 16 Jan 2018 19:22:02 INFO guoshui.py 228 15668 11412 customerid:9,开始尝试登陆
+Tue 16 Jan 2018 19:22:02 INFO guoshui.py 236 15668 11412 未传代理参数，启用本机IP
+Tue 16 Jan 2018 19:22:05 INFO guoshui.py 262 15668 11412 customerid:9，获取验证码为：[{"x":117,"y":23},{"x":70,"y":104},{"x":168,"y":56}]
+Tue 16 Jan 2018 19:22:05 INFO guoshui.py 266 15668 11412 customerid:9，验证验证码[{"x":117,"y":23},{"x":70,"y":104},{"x":168,"y":56}]
+Tue 16 Jan 2018 19:22:05 INFO guoshui.py 274 15668 11412 customerid:9,成功post数据
+Tue 16 Jan 2018 19:22:05 INFO guoshui.py 281 15668 11412 customerid:9pass
+Tue 16 Jan 2018 19:23:35 INFO shenbao.py 753 15668 11412 customerid:9截取国税增值税申报信息
+Tue 16 Jan 2018 19:23:49 INFO shenbao.py 877 15668 11412 customerid:9GSYCX出错
+Tue 16 Jan 2018 19:23:49 WARNING shenbao.py 878 15668 11412 [Errno 2] No such file or directory: 'resource/9144030008389925X7/国税增值税01申报结果截图.png'
