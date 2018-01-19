@@ -843,7 +843,7 @@ class autoSb(guoshui):
             index_url = "http://dzswj.szgs.gov.cn/BsfwtWeb/apps/views/myoffice/myoffice.html"
             browser.get(url=index_url)
             browser.delete_all_cookies()
-            with open('cookies.json', 'r', encoding='utf8') as f:
+            with open('cookies/cookies.json', 'r', encoding='utf8') as f:
                 cookielist = json.loads(f.read())
             for (k, v) in cookielist.items():
                 browser.add_cookie({

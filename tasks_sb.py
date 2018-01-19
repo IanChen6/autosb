@@ -24,8 +24,6 @@ import sys
 
 redis_cli=redis.StrictRedis(host='localhost', port=6379, decode_responses=True)
 logger = create_logger(path=os.path.dirname(sys.argv[0]).split('/')[-1])
-
-
 def run_test(user, pwd, batchid, batchyear, batchmonth,companyid, customerid,host,port,db,fw1,fw2,hw1,hw2,fwms,fwyj,hwyj,hwms,djzs,dfzs,dczs,djms,dfms,dcms):
     print("++++++++++++++++++++++++++++++++++++")
     print('jobs[ts_id=%s] running....' % batchid)
