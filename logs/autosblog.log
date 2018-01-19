@@ -16,3 +16,52 @@ Tue 16 Jan 2018 19:22:05 INFO guoshui.py 281 15668 11412 customerid:9pass
 Tue 16 Jan 2018 19:23:35 INFO shenbao.py 753 15668 11412 customerid:9截取国税增值税申报信息
 Tue 16 Jan 2018 19:23:49 INFO shenbao.py 877 15668 11412 customerid:9GSYCX出错
 Tue 16 Jan 2018 19:23:49 WARNING shenbao.py 878 15668 11412 [Errno 2] No such file or directory: 'resource/9144030008389925X7/国税增值税01申报结果截图.png'
+Fri 19 Jan 2018 20:23:54 INFO guoshui.py 230 12664 10820 customerid:9,开始尝试登陆
+Fri 19 Jan 2018 20:23:54 INFO guoshui.py 240 12664 10820 未传代理参数，启用本机IP
+Fri 19 Jan 2018 20:23:55 INFO guoshui.py 266 12664 10820 customerid:9，获取验证码为：[{"x":266,"y":92},{"x":171,"y":97},{"x":219,"y":53}]
+Fri 19 Jan 2018 20:23:55 INFO guoshui.py 270 12664 10820 customerid:9，验证验证码[{"x":266,"y":92},{"x":171,"y":97},{"x":219,"y":53}]
+Fri 19 Jan 2018 20:23:56 INFO guoshui.py 278 12664 10820 customerid:9,成功post数据
+Fri 19 Jan 2018 20:23:56 INFO guoshui.py 285 12664 10820 customerid:9pass
+Fri 19 Jan 2018 20:23:56 INFO shenbao.py 809 12664 10820 customerid:9获取cookies
+Fri 19 Jan 2018 20:23:56 WARNING shenbao.py 819 12664 10820 [Errno 2] No such file or directory: 'cookies/9cookies.json'
+Fri 19 Jan 2018 20:23:56 WARNING shenbao.py 820 12664 10820 customerid:9登陆失败
+Fri 19 Jan 2018 20:24:38 INFO guoshui.py 230 12664 10820 customerid:9,开始尝试登陆
+Fri 19 Jan 2018 20:24:38 INFO guoshui.py 240 12664 10820 未传代理参数，启用本机IP
+Fri 19 Jan 2018 20:24:39 INFO guoshui.py 266 12664 10820 customerid:9，获取验证码为：[{"x":119,"y":26},{"x":171,"y":56},{"x":268,"y":33}]
+Fri 19 Jan 2018 20:24:39 INFO guoshui.py 270 12664 10820 customerid:9，验证验证码[{"x":119,"y":26},{"x":171,"y":56},{"x":268,"y":33}]
+Fri 19 Jan 2018 20:24:39 INFO guoshui.py 278 12664 10820 customerid:9,成功post数据
+Fri 19 Jan 2018 20:24:39 INFO guoshui.py 285 12664 10820 customerid:9pass
+Fri 19 Jan 2018 20:24:39 INFO shenbao.py 809 12664 10820 customerid:9获取cookies
+Fri 19 Jan 2018 20:24:39 WARNING shenbao.py 839 12664 10820 Message: 'phantomjs' executable needs to be in PATH. 
+
+Fri 19 Jan 2018 20:25:42 INFO guoshui.py 230 12664 10820 customerid:9,开始尝试登陆
+Fri 19 Jan 2018 20:25:42 INFO guoshui.py 240 12664 10820 未传代理参数，启用本机IP
+Fri 19 Jan 2018 20:25:43 INFO guoshui.py 266 12664 10820 customerid:9，获取验证码为：None
+Fri 19 Jan 2018 20:25:43 INFO guoshui.py 230 12664 10820 customerid:9,开始尝试登陆
+Fri 19 Jan 2018 20:25:43 INFO guoshui.py 240 12664 10820 未传代理参数，启用本机IP
+Fri 19 Jan 2018 20:25:45 INFO guoshui.py 266 12664 10820 customerid:9，获取验证码为：None
+Fri 19 Jan 2018 20:25:45 INFO guoshui.py 230 12664 10820 customerid:9,开始尝试登陆
+Fri 19 Jan 2018 20:25:45 INFO guoshui.py 240 12664 10820 未传代理参数，启用本机IP
+Fri 19 Jan 2018 20:25:46 INFO guoshui.py 266 12664 10820 customerid:9，获取验证码为：[{"x":67,"y":106},{"x":22,"y":80},{"x":118,"y":66}]
+Fri 19 Jan 2018 20:25:46 INFO guoshui.py 270 12664 10820 customerid:9，验证验证码[{"x":67,"y":106},{"x":22,"y":80},{"x":118,"y":66}]
+Fri 19 Jan 2018 20:25:46 INFO guoshui.py 278 12664 10820 customerid:9,成功post数据
+Fri 19 Jan 2018 20:25:46 INFO guoshui.py 285 12664 10820 customerid:9pass
+Fri 19 Jan 2018 20:25:46 INFO shenbao.py 809 12664 10820 customerid:9获取cookies
+Fri 19 Jan 2018 20:25:46 WARNING shenbao.py 839 12664 10820 Message: 'phantomjs' executable needs to be in PATH. 
+
+Fri 19 Jan 2018 20:26:31 INFO guoshui.py 230 16276 11592 customerid:9,开始尝试登陆
+Fri 19 Jan 2018 20:26:31 INFO guoshui.py 240 16276 11592 未传代理参数，启用本机IP
+Fri 19 Jan 2018 20:26:33 INFO guoshui.py 266 16276 11592 customerid:9，获取验证码为：None
+Fri 19 Jan 2018 20:26:33 INFO guoshui.py 230 16276 11592 customerid:9,开始尝试登陆
+Fri 19 Jan 2018 20:26:33 INFO guoshui.py 240 16276 11592 未传代理参数，启用本机IP
+Fri 19 Jan 2018 20:26:34 INFO guoshui.py 266 16276 11592 customerid:9，获取验证码为：None
+Fri 19 Jan 2018 20:26:34 INFO guoshui.py 230 16276 11592 customerid:9,开始尝试登陆
+Fri 19 Jan 2018 20:26:34 INFO guoshui.py 240 16276 11592 未传代理参数，启用本机IP
+Fri 19 Jan 2018 20:26:36 INFO guoshui.py 266 16276 11592 customerid:9，获取验证码为：[{"x":173,"y":58},{"x":220,"y":89},{"x":268,"y":82}]
+Fri 19 Jan 2018 20:26:36 INFO guoshui.py 270 16276 11592 customerid:9，验证验证码[{"x":173,"y":58},{"x":220,"y":89},{"x":268,"y":82}]
+Fri 19 Jan 2018 20:26:36 INFO guoshui.py 278 16276 11592 customerid:9,成功post数据
+Fri 19 Jan 2018 20:26:36 INFO guoshui.py 285 16276 11592 customerid:9pass
+Fri 19 Jan 2018 20:26:36 INFO shenbao.py 809 16276 11592 customerid:9获取cookies
+Fri 19 Jan 2018 20:27:35 WARNING shenbao.py 871 16276 11592 Message: {"errorMessage":"Unable to find element with css selector '#menu_110000_110109'","request":{"headers":{"Accept":"application/json","Accept-Encoding":"identity","Connection":"close","Content-Length":"110","Content-Type":"application/json;charset=UTF-8","Host":"127.0.0.1:62671","User-Agent":"Python http auth"},"httpVersion":"1.1","method":"POST","post":"{\"using\": \"css selector\", \"value\": \"#menu_110000_110109\", \"sessionId\": \"ff965e20-fd13-11e7-b39b-93b042b615d2\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/ff965e20-fd13-11e7-b39b-93b042b615d2/element"}}
+Screenshot: available via screen
+

@@ -193,6 +193,7 @@ class autoSb(guoshui):
                                     browser.find_element_by_xpath('//*[@id="A21$text"]').send_keys(hwyj)
                                 except:
                                     print("无法输入")
+                            wait.until(lambda browser: browser.find_element_by_css_selector('#B22'))
                             fwsb = browser.find_element_by_xpath('//*[@id="B22"]/input').get_attribute("value")
                             hwsb = browser.find_element_by_xpath('//*[@id="A22"]/input').get_attribute("value")
                             sbje = float(fwsb) + float(hwsb)
@@ -867,7 +868,6 @@ class autoSb(guoshui):
         try:
             # 地税查询
             self.dishui(browser)
-
         except Exception as e:
             self.logger.warn(e)
             params = (
@@ -875,6 +875,7 @@ class autoSb(guoshui):
             self.insert_db("[dbo].[Python_Serivce_Job_Exception]", params)
             job_finish(self.host, self.port, self.db, self.batchid, self.companyid, self.customerid, '-1', "地税查询失败")
             browser.quit()
+            return False
         try:
             shenbao_url = 'http://dzswj.szgs.gov.cn/BsfwtWeb/apps/views/sb/cxdy/sbcx.html'
             browser.get(url="http://dzswj.szgs.gov.cn/BsfwtWeb/apps/views/myoffice/myoffice.html")
