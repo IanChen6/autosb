@@ -223,7 +223,7 @@ class autoSb(guoshui):
                                     fail_dict[t[0]] = t[1]
                                 fail_json = json.dumps(fail_dict, ensure_ascii=False)
                                 gsparams = (self.customerid, "GS", "小规模增值税", fail_json)
-                                self.insert_db(self.host, self.port, self.db, "[dbo].[Python_Serivce_ShenZhen_TaxApplyCheckError]",
+                                self.insert_db("[dbo].[Python_Serivce_ShenZhen_TaxApplyCheckError]",
                                           gsparams)
                                 browser.quit()
                                 sys.exit()
@@ -237,7 +237,7 @@ class autoSb(guoshui):
                     gsdict["申报状态"] = "已申报"
                     gsjson = json.dumps(gsdict, ensure_ascii=False)
                     gsparams = (self.customerid, "GS", "小规模增值税", gsjson)
-                    self.insert_db(self.host, self.port, self.db, "[dbo].[Python_Serivce_ShenZhen_TaxApplyUpdate]", gsparams)
+                    self.insert_db("[dbo].[Python_Serivce_ShenZhen_TaxApplyUpdate]", gsparams)
                     print('国税申报成功')
                 except Exception as e:
                     print(e)
@@ -252,7 +252,7 @@ class autoSb(guoshui):
                     gsdict["申报状态"] = "申报失败"
                     gsjson = json.dumps(gsdict, ensure_ascii=False)
                     gsparams = (self.customerid, "GS", "小规模增值税", gsjson)
-                    self.insert_db(self.host, self.port, self.db, "[dbo].[Python_Serivce_ShenZhen_TaxApplyUpdate]", gsparams)
+                    self.insert_db("[dbo].[Python_Serivce_ShenZhen_TaxApplyUpdate]", gsparams)
                     browser.quit()
                     sys.exit()
             a += 1
@@ -344,7 +344,7 @@ class autoSb(guoshui):
                         dsdict["申报状态"] = sb_status
                         dsjson = json.dumps(dsdict, ensure_ascii=False)
                         dsparams = (self.customerid, "DS", "教育费附加、地方教育附加、城市维护建设税", dsjson)
-                        self.insert_db(self.host, self.port, self.db, "[dbo].[Python_Serivce_ShenZhen_TaxApplyUpdate]", dsparams)
+                        self.insert_db("[dbo].[Python_Serivce_ShenZhen_TaxApplyUpdate]", dsparams)
                     else:
                         print('地税申报失败')
                         sb_status = "失败"
@@ -355,7 +355,7 @@ class autoSb(guoshui):
                         dsdict["申报状态"] = sb_status
                         dsjson = json.dumps(dsdict, ensure_ascii=False)
                         dsparams = (self.customerid, "DS", "教育费附加、地方教育附加、城市维护建设税", dsjson)
-                        self.insert_db(self.host, self.port, self.db, "[dbo].[Python_Serivce_ShenZhen_TaxApplyUpdate]", dsparams)
+                        self.insert_db("[dbo].[Python_Serivce_ShenZhen_TaxApplyUpdate]", dsparams)
 
                     break
                 b += 1
@@ -403,7 +403,7 @@ class autoSb(guoshui):
         # time.sleep(1)
         browser.find_element_by_css_selector('#query').click()
         time.sleep(2)
-        grsd = self.save_png(browser, '{}/地税个人所得税已申报查询.png'.format(self.user))
+        grsd = self.save_png(browser, 'resource/{}/地税个人所得税已申报查询.png'.format(self.user))
         # 表格信息爬取
         content = browser.page_source
         root = etree.HTML(content)
@@ -441,9 +441,9 @@ class autoSb(guoshui):
                                             timeout=10,
                                             cookies=ck).content
                 if "错误" not in resp:
-                    with open("{}/申报表详情{}.pdf".format(self.user, pzxh), 'wb') as w:
+                    with open("resource/{}/申报表详情{}.pdf".format(self.user, pzxh), 'wb') as w:
                         w.write(pdf_content)
-                    pdf = self.upload_img("{}/申报表详情{}.pdf".format(self.user, pzxh))
+                    pdf = self.upload_img("resource/{}/申报表详情{}.pdf".format(self.user, pzxh))
                     pdf_list.append(pdf)
                 params = (
                     self.batchid, self.batchyear, self.batchmonth, self.companyid, self.customerid,
@@ -472,7 +472,7 @@ class autoSb(guoshui):
         # time.sleep(1)
         browser.find_element_by_css_selector('#query').click()
         time.sleep(2)
-        csjs = self.save_png(browser, '{}/地税城市建设税已申报查询.png'.format(self.user))
+        csjs = self.save_png(browser, 'resource/{}/地税城市建设税已申报查询.png'.format(self.user))
         # 表格信息爬取
         content = browser.page_source
         root = etree.HTML(content)
@@ -510,12 +510,12 @@ class autoSb(guoshui):
                                             timeout=10,
                                             cookies=ck).content
                 if "错误" not in resp1:
-                    with open("{}/申报表详情{}.pdf".format(self.user, pzxh), 'wb') as w:
+                    with open("resource/{}/申报表详情{}.pdf".format(self.user, pzxh), 'wb') as w:
                         w.write(pdf_content)
                     time.sleep(0.5)
-                    pdf1 = self.upload_img("{}/申报表详情{}.pdf".format(self.user, pzxh))
+                    pdf1 = self.upload_img("resource/{}/申报表详情{}.pdf".format(self.user, pzxh))
                     pdf_list.append(pdf1)
-                    pdf_dict = self.parse_pdf("{}/申报表详情{}.pdf".format(self.user, pzxh))
+                    pdf_dict = self.parse_pdf("resource/{}/申报表详情{}.pdf".format(self.user, pzxh))
                     js = self.img2json(pdf_list)
                     js = json.loads(js)
                     js["pdf数据"] = pdf_dict
@@ -550,7 +550,7 @@ class autoSb(guoshui):
         # time.sleep(1)
         browser.find_element_by_css_selector('#query').click()
         time.sleep(2)
-        qysd = self.save_png(browser, '{}/地税企业所得税已申报查询.png'.format(self.user))
+        qysd = self.save_png(browser, 'resource/{}/地税企业所得税已申报查询.png'.format(self.user))
         # 表格信息爬取
         content = browser.page_source
         root = etree.HTML(content)
@@ -588,9 +588,9 @@ class autoSb(guoshui):
                                             timeout=10,
                                             cookies=ck).content
                 if "错误" not in resp2:
-                    with open("{}/申报表详情{}.pdf".format(self.user, pzxh), 'wb') as w:
+                    with open("resource/{}/申报表详情{}.pdf".format(self.user, pzxh), 'wb') as w:
                         w.write(pdf_content)
-                    pdf2 = self.upload_img("{}/申报表详情{}.pdf".format(self.user, pzxh))
+                    pdf2 = self.upload_img("resource/{}/申报表详情{}.pdf".format(self.user, pzxh))
                     pdf_list.append(pdf2)
                 params = (
                     self.batchid, self.batchyear, self.batchmonth, self.companyid, self.customerid,
@@ -628,7 +628,7 @@ class autoSb(guoshui):
         # time.sleep(1)
         browser.find_element_by_css_selector('#query').click()
         time.sleep(2)
-        jietu = self.save_png(browser, '{}/地税未申报查询.png'.format(self.user))
+        jietu = self.save_png(browser, 'resource/{}/地税未申报查询.png'.format(self.user))
         # 缴款表格信息爬取
         content = browser.page_source
         root = etree.HTML(content)
@@ -679,7 +679,7 @@ class autoSb(guoshui):
         # time.sleep(1)
         browser.find_element_by_css_selector('#query').click()
         time.sleep(2)
-        jietu = self.save_png(browser, '{}/地税已缴款查询.png'.format(self.user))
+        jietu = self.save_png(browser, 'resource/{}/地税已缴款查询.png'.format(self.user))
         # 缴款表格信息爬取
         content = browser.page_source
         root = etree.HTML(content)
@@ -714,7 +714,7 @@ class autoSb(guoshui):
                         time.sleep(0.5)
                         print(c_window)
                         print(pz)
-                        png_name = "{}/缴款凭证号{}.png".format(self.user, pz)
+                        png_name = "resource/{}/缴款凭证号{}.png".format(self.user, pz)
                         j = self.save_png(browser, png_name)
                         jietulist.append(j)
                         sbsj = {}
@@ -805,13 +805,19 @@ class autoSb(guoshui):
 
     def excute_spider(self):
         try:
-            cookies, session = self.login()
-            jsoncookies = json.dumps(cookies)
-            with open('cookies.json', 'w') as f:  # 将login后的cookies提取出来
+            cookies = self.login()
+            self.logger.info("customerid:{}获取cookies".format(self.customerid))
+            jsoncookies = json.dumps(cookies,ensure_ascii=False)
+            if "账号和密码不匹配" in jsoncookies:
+                self.logger.warn("customerid:{}账号和密码不匹配".format(self.customerid))
+                job_finish(self.host, self.port, self.db, self.batchid, self.companyid, self.customerid, '-2', "账号和密码不匹配")
+                return
+            with open('cookies/{}cookies.json'.format(self.customerid), 'w') as f:  # 将login后的cookies提取出来
                 f.write(jsoncookies)
                 f.close()
         except Exception as e:
             self.logger.warn(e)
+            self.logger.warn("customerid:{}登陆失败".format(self.customerid))
             job_finish(self.host, self.port, self.db, self.batchid, self.companyid, self.customerid, '-1', "登录失败")
             return False
         try:
