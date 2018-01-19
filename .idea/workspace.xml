@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ba5c98bc-5846-4d70-84e4-1bbadde63edd" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/shenbao.py" afterPath="$PROJECT_DIR$/shenbao.py" />
-      <change beforePath="$PROJECT_DIR$/tasks_sb.py" afterPath="$PROJECT_DIR$/tasks_sb.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,8 +19,8 @@
       <file leaf-file-name="shenbao.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/shenbao.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="845" column="73" lean-forward="true" selection-start-line="845" selection-start-column="73" selection-end-line="845" selection-end-column="73" />
+            <state relative-caret-position="361">
+              <caret line="839" column="89" lean-forward="true" selection-start-line="839" selection-start-column="89" selection-end-line="839" selection-end-column="89" />
               <folding>
                 <element signature="e#315#342#0" expanded="true" />
               </folding>
@@ -32,8 +31,8 @@
       <file leaf-file-name="guoshui.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/guoshui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="1394" column="12" lean-forward="false" selection-start-line="1394" selection-start-column="8" selection-end-line="1394" selection-end-column="12" />
+            <state relative-caret-position="236">
+              <caret line="66" column="31" lean-forward="false" selection-start-line="66" selection-start-column="31" selection-end-line="66" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -108,14 +107,17 @@
       <find>cre</find>
       <find>logger.</find>
       <find>init</find>
-      <find>os.m</find>
       <find>excute</find>
       <find>inser</find>
       <find>insert</find>
+      <find>excu</find>
+      <find>exc</find>
       <find>.png</find>
       <find>.pdf</find>
-      <find>exc</find>
-      <find>excu</find>
+      <find>os.</find>
+      <find>os.m</find>
+      <find>cookies</find>
+      <find>cookies.js</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -449,16 +451,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/guoshui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="1394" column="12" lean-forward="false" selection-start-line="1394" selection-start-column="8" selection-end-line="1394" selection-end-column="12" />
+        <state relative-caret-position="236">
+          <caret line="66" column="31" lean-forward="false" selection-start-line="66" selection-start-column="31" selection-end-line="66" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/shenbao.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="845" column="73" lean-forward="true" selection-start-line="845" selection-start-column="73" selection-end-line="845" selection-end-column="73" />
+        <state relative-caret-position="361">
+          <caret line="839" column="89" lean-forward="true" selection-start-line="839" selection-start-column="89" selection-end-line="839" selection-end-column="89" />
           <folding>
             <element signature="e#315#342#0" expanded="true" />
           </folding>

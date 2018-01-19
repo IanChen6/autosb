@@ -63,8 +63,8 @@ class autoSb(guoshui):
         if batchmonth != 0:
             monthRange = calendar.monthrange(batchyear, batchmonth)
             self.days = monthRange[1]
-        if not os.path.exists('{}'.format(user)):
-            os.mkdir('{}'.format(user))
+        if not os.path.exists('resource/{}'.format(user)):
+            os.mkdir('resource/{}'.format(user))
         self.fw1=float(fw1)
         self.fw2=float(fw2)
         self.hw1=float(hw1)
@@ -843,7 +843,7 @@ class autoSb(guoshui):
             index_url = "http://dzswj.szgs.gov.cn/BsfwtWeb/apps/views/myoffice/myoffice.html"
             browser.get(url=index_url)
             browser.delete_all_cookies()
-            with open('cookies/cookies.json', 'r', encoding='utf8') as f:
+            with open('cookies/{}cookies.json'.format(self.customerid), 'r', encoding='utf8') as f:
                 cookielist = json.loads(f.read())
             for (k, v) in cookielist.items():
                 browser.add_cookie({
